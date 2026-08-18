@@ -325,14 +325,14 @@ if __name__ == '__main__':
 <-- Ответ
 
 ```commandline
-(venv) barsukov@barsukov-VirtualBox:~/ansible$ python -m ansible.modules.my_own_module test.json
+(venv) dorozhkin@dorozhkin-VirtualBox:~/ansible$ python -m ansible.modules.my_own_module test.json
 
 {"changed": true, "original_message": "", "message": "", "invocation": {"module_args": {"path": "/tmp/path.txt", "content": "test_content"}}}
-(venv) barsukov@barsukov-VirtualBox:~/ansible$ cat /tmp/path.txt
-test_content(venv) barsukov@barsukov-VirtualBoxpython -m ansible.modules.my_own_module test.jsonle test.json
+(venv) dorozhkin@dorozhkin-VirtualBox:~/ansible$ cat /tmp/path.txt
+test_content(venv) dorozhkin@dorozhkin-VirtualBoxpython -m ansible.modules.my_own_module test.jsonle test.json
 
 {"changed": false, "original_message": "", "message": "", "failed": true, "msg": "File exist", "invocation": {"module_args": {"path": "/tmp/path.txt", "content": "test_content"}}}
-(venv) barsukov@barsukov-VirtualBox:~/ansible$
+(venv) dorozhkin@dorozhkin-VirtualBox:~/ansible$
 
 ```
 
@@ -362,7 +362,7 @@ test_content(venv) barsukov@barsukov-VirtualBoxpython -m ansible.modules.my_own_
 <-- Ответ
 
 ```commandline
-(venv) barsukov@barsukov-VirtualBox:~/ansible$ ansible-playbook test_task.yml
+(venv) dorozhkin@dorozhkin-VirtualBox:~/ansible$ ansible-playbook test_task.yml
 [WARNING]: You are running the development version of Ansible. You should only run Ansible from "devel" if you are modifying the Ansible engine, or trying out features under development. This is a rapidly changing source of code and can become unstable at any point.
 [WARNING]: No inventory was parsed, only implicit localhost is available
 [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
@@ -395,7 +395,7 @@ localhost                  : ok=2    changed=1    unreachable=0    failed=0    s
 
 **Шаг 9.** В эту collection перенесите свой module в соответствующую директорию.
 
-`ansible-galaxy role init barsukov.test`
+`ansible-galaxy role init dorozhkin.test`
 
 **Шаг 10.** Single task playbook преобразуйте в single task role и перенесите в collection. У role должны быть default всех параметров module.
 
