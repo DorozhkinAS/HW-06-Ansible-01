@@ -442,13 +442,13 @@ localhost                  : ok=2    changed=1    unreachable=0    failed=0    s
 
 ```commandline
 
-ansible-galaxy collection install barsukov-test-1.0.0.tar.gz --force
+ansible-galaxy collection install dorozhkin-test-1.0.0.tar.gz --force
 [WARNING]: You are running the development version of Ansible. You should only run Ansible from "devel" if you are modifying the Ansible engine, or trying out features under development. This is a rapidly changing source of code and can become unstable at any point.
 Starting galaxy collection install process
 Process install dependency map
 Starting collection install process
-Installing 'barsukov.test:1.0.0' to '/home/barsukov/.ansible/collections/ansible_collections/barsukov/test'
-barsukov.test:1.0.0 was installed successfully
+Installing 'dorozhkin.test:1.0.0' to '/home/dorozhkin/.ansible/collections/ansible_collections/dorozhkin/test'
+dorozhkin.test:1.0.0 was installed successfully
 
 ```
 
