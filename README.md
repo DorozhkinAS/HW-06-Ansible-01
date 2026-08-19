@@ -484,7 +484,6 @@ localhost                  : ok=2    changed=0    unreachable=0    failed=0    s
 
 <-- Ответ
 
-
-[barsukov-test-1.0.0.tar.gz](https://github.com/Barsukov-Alex/08-ansible-06-module)
+[dorozhkin-test-1.0.0.tar](https://github.com/DorozhkinAS/HW-06-Ansible-01/blob/main/dorozhkin-test-1.0.0.tar) 
 
 ---
